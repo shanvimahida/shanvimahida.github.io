@@ -1,5 +1,5 @@
 layout: default
-title: Hi, I'm Shanvi Mahida!
+title: My Portfolio
 
 ## Empathy-led and people - focused, I’m chasing purpose not perfection. 
 
