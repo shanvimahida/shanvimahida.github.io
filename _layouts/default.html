@@ -1,13 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">  
 <head>
-    <title>Shanvi Mahida</title>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width, intial-scale=1.0">
+    <title>{{page.title}}</title>
+    <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-    <h1>Shanvi Mahida</h1>
-  <h2>Empathy-led and people - focused, I’m chasing purpose not perfection.</h2>
-    <p> Hi, I’m Shanvi Mahida, a teenager with a growing passion for medicine who’s still discovering her path but is committed to helping people along the way. I love working with people - especially kids - and I’m living life along the words of Hippocrates: 
-“Wherever the art of medicine is loved, there is also a love of humanity.” I may not have it all figured out just yet but I’m using empathy and curiosity to learn and grow every step of the way. 
-</p>
+
+    <header>
+        <h1>{{page.title}}</h1>
+    </header>
+
+    <img class="banner" src="assets/banner.png" alt="Portfolio Banner">
+
+    <main>
+        {{ content }}
+    </main>
+
 </body>
 </html>
