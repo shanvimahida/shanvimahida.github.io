@@ -5,6 +5,8 @@ I’m currently an eighth grader planning to pursue a career in healthcare. My l
 ### Experiences
 - Volunteers at the local library
 - CPR and First Aid certified by American Red Cross
+- I had the honor of being part of an interview while I was in fourth garde, talkign about the new additon to our township's schools -   solar panels
+- In fifth grade I was part of the "TREP$" Program which gave me the opportunity to start my won business called "Tangled Treasures",    selling rope bowls as I learned about entrepreneurship
 - I’ve participated in countless extracurriculars throughout my life such as gymnastics, robotics, and dance 
 - I eventually stuck with swimming - a sport I have done since I was three - and volleyball, my newfound passion.
 - Both have taught me diligence, time management, stamina, goal-setting, discipline, and so much more. Sports have taught me to          overcome mental blocks and provide me a way to reset while allowing me to push through challenges.
