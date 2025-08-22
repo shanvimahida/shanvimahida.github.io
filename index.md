@@ -17,7 +17,7 @@ I’m currently an eighth grader planning to pursue a career in healthcare. My l
 - I’m open to multiple medical positions and topics such as genetics, psychology, neurology, and pediatrics
 
 ### Contact Me!
-I love talking to people who are involved in healthcare and students who are on similar paths - feel free to reach out and connect to my email:shanvi.mahida@gmail.com
+I love talking to people who are involved in healthcare and students who are on similar paths - feel free to reach out and connect to my email: shanvi.mahida@gmail.com
 
 
 
