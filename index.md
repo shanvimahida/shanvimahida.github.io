@@ -4,7 +4,7 @@ I’m currently an eighth grader planning to pursue a career in healthcare. My l
 
 ### Experiences
 - Volunteers at the local library
-- CPR and First Aid certified by Red Cross
+- CPR and First Aid certified by American Red Cross
 - I’ve participated in countless extracurriculars throughout my life such as gymnastics, robotics, and dance 
 - I eventually stuck with swimming - a sport I have done since I was three - and volleyball, my newfound passion.
 - Both have taught me diligence, time management, stamina, goal-setting, discipline, and so much more. Sports have taught me to          overcome mental blocks and provide me a way to reset while allowing me to push through challenges.
@@ -17,7 +17,7 @@ I’m currently an eighth grader planning to pursue a career in healthcare. My l
 - I’m open to multiple medical positions and topics such as genetics, psychology, neurology, and pediatrics
 
 ### Contact Me!
-I love talking to people who are involved in healthcare and students who are on similar paths - feel free to reach out and connect to my email: [shanvi.mahida@gmail.com]
+I love talking to people who are involved in healthcare and students who are on similar paths - feel free to reach out and connect to my email:shanvi.mahida@gmail.com
 
 
 
