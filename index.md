@@ -5,8 +5,9 @@ I’m currently an eighth grader planning to pursue a career in healthcare. My l
 ### Experiences
 - Volunteers at the local library
 - CPR and First Aid certified by Red Cross
-
-I’ve participated in countless extracurriculars throughout my life such as gymnastics, robotics, and dance although I eventually stuck with swimming - a sport I have done since I was three - and volleyball, my newfound passion. Both have taught me diligence, time management, stamina, goal-setting, discipline, and so much more. Sports have taught me to overcome mental blocks and provide me a way to reset while allowing me to push through challenges.
+- I’ve participated in countless extracurriculars throughout my life such as gymnastics, robotics, and dance 
+- I eventually stuck with swimming - a sport I have done since I was three - and volleyball, my newfound passion.
+- Both have taught me diligence, time management, stamina, goal-setting, discipline, and so much more. Sports have taught me to          overcome mental blocks and provide me a way to reset while allowing me to push through challenges.
 
 ### What I'm Exploring
 - I’m truly fascinated by the world of both biology and psychology
