@@ -1,4 +1,3 @@
-
 ### About Me
 I’m currently an eighth grader planning to pursue a career in healthcare. My life wasn’t always and still isn’t fully planned out but I’ve been drawn to helping others for as long as I can remember. Even as a kid I was so intrigued by Rapunzel’s magical healing hair, so much so that I may have attempted to use my own hair to cure a few papercuts over the years. Whether it's lending a hand at the library or taking responsibility for my own younger brother, I find meaning in caring for people and helping them feel seen and supported. I’m still exploring healthcare, wondering if I want to go into pediatrics, psychology or something else - but I’m excited to be learning at every pothole and fork in the road. 
 
