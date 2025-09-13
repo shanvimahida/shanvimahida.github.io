@@ -3,8 +3,10 @@ I’m currently an eighth grader planning to pursue a career in healthcare. My l
 
 ### Experiences
 - Volunteers at the local library
+          I've helped out in events such as Diwali, Storytimes, Kids Summer Reading and more! 
 - CPR and First Aid certified by American Red Cross
-- I had the honor of being part of an interview while I was in fourth garde, talking about the newest additon to our township's          schools -   solar panels
+- I had the honor of being part of an interview while I was in fourth grade, talking about the newest additon to our township's          schools -   solar panels
+- I ran for my school's exectutive board as a public relations rep.
 - In fifth grade I was part of the "TREP$" Program which gave me the opportunity to start my won business called "Tangled Treasures",    selling rope bowls as I learned about entrepreneurship
 - I’ve participated in countless extracurriculars throughout my life such as gymnastics, robotics, and dance 
 - I eventually stuck with swimming - a sport I have done since I was three - and volleyball, my newfound passion.
