@@ -1,6 +1,6 @@
 # shanvimahida.github.io
 shanvimahida.github.io
-<H1> <B>Welcome to Shanvi Mahida Personal Website </B>b</H1>
+<H1> <B>Welcome to Shanvi Mahida Personal Website </B></H1>
 <H2> Hi, I'm Shanvi Mahida and this is my online portfolio </H2>
 
 ### About Me
