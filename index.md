@@ -12,6 +12,7 @@ I’m currently a freshman planning to pursue a career in healthcare. My life wa
 - I eventually stuck with swimming - a sport I have done since I was three - and volleyball, my newfound passion.
 - Both have taught me diligence, time management, stamina, goal-setting, discipline, and so much more. Sports have taught me to          overcome mental blocks and provide me a way to reset while allowing me to push through challenges.
 -  Over the past year I've been a member of a variety of clubs such as: STEAM, MathCounts (where my team competed at regionals), Math Olympiad, Science Olympiad (in which I competed in Codebsuters, Heredity, Disease Detectives, and Anatomy + Physiology at the regional and state level), Studnet Council, the Anti-Defamation League, Spanish Club, and the Art and Literacy Magazine.
+-  I recently was presented the Presidential Award for Academic Excellence, which is given to studnets who have gotten straight As throughout highschool. 
 
 ### What I'm Exploring
 - I’m truly fascinated by the world of both biology and psychology
