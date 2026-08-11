@@ -1,0 +1,3277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Shanvi Mahida | Future Healthcare Professional</title>
+
+  <meta
+    name="description"
+    content="Shanvi Mahida — an aspiring healthcare professional exploring biology, psychology, science, leadership, and service."
+  >
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <style>
+
+    /* =========================================================
+       ROOT
+    ========================================================= */
+
+    :root {
+      --navy: #17233f;
+      --navy-2: #253457;
+
+      --blue: #628fd8;
+      --blue-dark: #4777c0;
+      --blue-light: #eaf3ff;
+
+      --purple: #9c76d8;
+      --purple-light: #f2eaff;
+
+      --pink: #c653a5;
+      --pink-light: #faeafa;
+
+      --lavender: #eee9ff;
+
+      --white: #ffffff;
+      --off-white: #f9fbff;
+
+      --text: #202d48;
+      --muted: #69758c;
+
+      --border: rgba(72, 99, 144, 0.12);
+
+      --shadow:
+        0 20px 60px rgba(50, 77, 120, 0.10);
+
+      --shadow-small:
+        0 10px 30px rgba(50, 77, 120, 0.08);
+
+      --radius: 25px;
+    }
+
+
+    /* =========================================================
+       RESET
+    ========================================================= */
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "DM Sans", sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(
+          circle at 10% 15%,
+          rgba(174, 207, 255, 0.25),
+          transparent 25%
+        ),
+        radial-gradient(
+          circle at 90% 35%,
+          rgba(216, 191, 245, 0.18),
+          transparent 27%
+        ),
+        #f8fbff;
+      overflow-x: hidden;
+      line-height: 1.65;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    button {
+      font-family: inherit;
+    }
+
+    ::selection {
+      background: #d8c9f6;
+      color: var(--navy);
+    }
+
+
+    /* =========================================================
+       BACKGROUND DECORATIONS
+    ========================================================= */
+
+    .background-shape {
+      position: fixed;
+      pointer-events: none;
+      z-index: -1;
+      border-radius: 50%;
+      filter: blur(3px);
+    }
+
+    .shape-1 {
+      width: 350px;
+      height: 350px;
+      top: 5%;
+      left: -180px;
+      background: rgba(127, 183, 239, 0.13);
+    }
+
+    .shape-2 {
+      width: 300px;
+      height: 300px;
+      right: -150px;
+      top: 35%;
+      background: rgba(180, 142, 221, 0.12);
+    }
+
+    .shape-3 {
+      width: 260px;
+      height: 260px;
+      left: 15%;
+      bottom: 5%;
+      background: rgba(157, 200, 244, 0.10);
+    }
+
+
+    /* =========================================================
+       NAVIGATION
+    ========================================================= */
+
+    .navbar {
+      position: fixed;
+      top: 16px;
+      left: 50%;
+      transform: translateX(-50%);
+
+      width: min(1160px, calc(100% - 30px));
+
+      background: rgba(255, 255, 255, 0.86);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+
+      border: 1px solid rgba(255, 255, 255, 0.9);
+
+      box-shadow:
+        0 12px 40px rgba(45, 71, 111, 0.09);
+
+      border-radius: 100px;
+
+      padding: 9px 12px;
+
+      z-index: 9999;
+    }
+
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding-left: 5px;
+    }
+
+    .brand-logo {
+      width: 43px;
+      height: 43px;
+
+      border-radius: 50%;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      background:
+        linear-gradient(
+          135deg,
+          #7f83d9,
+          #c05ca9
+        );
+
+      color: white;
+      font-family: "Playfair Display", serif;
+      font-weight: 700;
+      font-size: 15px;
+
+      box-shadow:
+        0 8px 20px rgba(131, 94, 191, 0.22);
+    }
+
+    .brand-name {
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: 0.2px;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .nav-links a {
+      position: relative;
+
+      padding: 10px 15px;
+
+      border-radius: 30px;
+
+      font-size: 13px;
+      font-weight: 700;
+
+      color: #56647d;
+
+      transition: 0.25s ease;
+    }
+
+    .nav-links a:hover {
+      color: var(--purple);
+      background: #f4effd;
+    }
+
+    .nav-links a.active {
+      color: var(--purple);
+    }
+
+    .nav-links a.active::after {
+      content: "";
+
+      position: absolute;
+
+      width: 5px;
+      height: 5px;
+
+      border-radius: 50%;
+
+      background: var(--pink);
+
+      left: 50%;
+      bottom: 3px;
+
+      transform: translateX(-50%);
+    }
+
+    .nav-button {
+      background:
+        linear-gradient(
+          135deg,
+          #8d66c7,
+          #c34c9e
+        ) !important;
+
+      color: white !important;
+
+      padding: 11px 19px !important;
+
+      box-shadow:
+        0 8px 20px rgba(171, 82, 170, 0.22);
+    }
+
+    .nav-button:hover {
+      transform: translateY(-2px);
+    }
+
+    .menu-button {
+      display: none;
+
+      border: 0;
+      background: transparent;
+
+      font-size: 24px;
+      color: var(--navy);
+
+      cursor: pointer;
+    }
+
+
+    /* =========================================================
+       HERO
+    ========================================================= */
+
+    .hero {
+      min-height: 100vh;
+
+      display: flex;
+      align-items: center;
+
+      padding:
+        150px
+        6%
+        90px;
+
+      position: relative;
+
+      overflow: hidden;
+    }
+
+    .hero-container {
+      width: min(1160px, 100%);
+
+      margin: auto;
+
+      display: grid;
+
+      grid-template-columns:
+        0.9fr
+        1.1fr;
+
+      gap: 60px;
+
+      align-items: center;
+    }
+
+    .hero-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+
+      color: var(--purple);
+
+      font-size: 12px;
+
+      font-weight: 800;
+
+      text-transform: uppercase;
+
+      letter-spacing: 1.7px;
+
+      margin-bottom: 19px;
+    }
+
+    .heart-line {
+      width: 35px;
+      height: 1px;
+
+      background: #b79add;
+
+      position: relative;
+    }
+
+    .heart-line::after {
+      content: "♡";
+
+      position: absolute;
+
+      right: -10px;
+      top: -12px;
+
+      color: var(--purple);
+
+      font-size: 16px;
+    }
+
+    .hero-title {
+      font-family: "Playfair Display", serif;
+
+      font-size:
+        clamp(55px, 7vw, 90px);
+
+      line-height: 0.97;
+
+      letter-spacing: -3px;
+
+      color: var(--navy);
+
+      margin-bottom: 26px;
+    }
+
+    .hero-title span {
+      color: var(--pink);
+    }
+
+    .hero-text {
+      max-width: 570px;
+
+      color: var(--muted);
+
+      font-size: 17px;
+
+      line-height: 1.8;
+
+      margin-bottom: 30px;
+    }
+
+    .hero-buttons {
+      display: flex;
+
+      align-items: center;
+
+      gap: 12px;
+
+      flex-wrap: wrap;
+    }
+
+    .button {
+      display: inline-flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      gap: 8px;
+
+      padding:
+        13px
+        20px;
+
+      border-radius: 100px;
+
+      font-size: 13px;
+
+      font-weight: 800;
+
+      transition: 0.3s ease;
+    }
+
+    .button-primary {
+      color: white;
+
+      background:
+        linear-gradient(
+          135deg,
+          #a16bc9,
+          #c650a3
+        );
+
+      box-shadow:
+        0 12px 25px rgba(180, 84, 164, 0.22);
+    }
+
+    .button-primary:hover {
+      transform: translateY(-3px);
+
+      box-shadow:
+        0 17px 35px rgba(180, 84, 164, 0.28);
+    }
+
+    .button-secondary {
+      background: white;
+
+      color: var(--purple);
+
+      border: 1px solid #d8c8ef;
+    }
+
+    .button-secondary:hover {
+      transform: translateY(-3px);
+
+      background: #faf7ff;
+    }
+
+    .scroll-note {
+      display: flex;
+
+      align-items: center;
+
+      gap: 9px;
+
+      margin-top: 38px;
+
+      color: #8290a6;
+
+      font-size: 10px;
+
+      font-weight: 800;
+
+      text-transform: uppercase;
+
+      letter-spacing: 1px;
+    }
+
+    .scroll-mouse {
+      width: 17px;
+      height: 26px;
+
+      border: 1.5px solid #8997ad;
+
+      border-radius: 10px;
+
+      position: relative;
+    }
+
+    .scroll-mouse::after {
+      content: "";
+
+      position: absolute;
+
+      width: 3px;
+      height: 5px;
+
+      border-radius: 5px;
+
+      background: #8997ad;
+
+      top: 5px;
+      left: 50%;
+
+      transform: translateX(-50%);
+
+      animation:
+        scrollDot 1.5s infinite;
+    }
+
+    @keyframes scrollDot {
+      0% {
+        opacity: 1;
+        transform: translate(-50%, 0);
+      }
+
+      100% {
+        opacity: 0;
+        transform: translate(-50%, 7px);
+      }
+    }
+
+
+    /* =========================================================
+       HERO PHOTO
+    ========================================================= */
+
+    .hero-photo-area {
+      position: relative;
+
+      min-height: 560px;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+    }
+
+    .photo-backdrop {
+      position: absolute;
+
+      width: 470px;
+      height: 470px;
+
+      border-radius: 50%;
+
+      background:
+        radial-gradient(
+          circle at 40% 30%,
+          #dbeaff,
+          #a8c7f1
+        );
+
+      opacity: 0.85;
+
+      right: 0;
+
+      transform:
+        rotate(-9deg);
+    }
+
+    .photo-backdrop::before {
+      content: "";
+
+      position: absolute;
+
+      inset: -35px;
+
+      border-radius: 50%;
+
+      border: 1px solid #d9c9f2;
+    }
+
+    .photo-backdrop::after {
+      content: "";
+
+      position: absolute;
+
+      inset: -55px;
+
+      border-radius: 50%;
+
+      border:
+        1px solid
+        rgba(174, 145, 220, 0.45);
+    }
+
+    .photo-frame {
+      position: relative;
+
+      width: 390px;
+      height: 500px;
+
+      border-radius:
+        195px
+        195px
+        35px
+        35px;
+
+      padding: 7px;
+
+      background: white;
+
+      box-shadow:
+        0 30px 70px
+        rgba(53, 82, 129, 0.18);
+
+      z-index: 2;
+
+      overflow: hidden;
+    }
+
+    .photo-frame::after {
+      content: "";
+
+      position: absolute;
+
+      inset: 7px;
+
+      border-radius:
+        190px
+        190px
+        30px
+        30px;
+
+      border:
+        1px solid
+        rgba(255,255,255,.75);
+
+      pointer-events: none;
+
+      z-index: 4;
+    }
+
+    .shanvi-photo {
+      width: 100%;
+      height: 100%;
+
+      object-fit: cover;
+
+      object-position: center;
+
+      display: block;
+
+      border-radius:
+        190px
+        190px
+        30px
+        30px;
+    }
+
+    .photo-badge {
+      position: absolute;
+
+      z-index: 5;
+
+      bottom: 58px;
+      right: -15px;
+
+      width: 64px;
+      height: 64px;
+
+      border-radius: 50%;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      background: white;
+
+      color: var(--pink);
+
+      font-size: 27px;
+
+      box-shadow:
+        0 12px 30px
+        rgba(62, 89, 130, 0.18);
+    }
+
+    .floating-info {
+      position: absolute;
+
+      z-index: 6;
+
+      background:
+        rgba(255,255,255,.92);
+
+      backdrop-filter: blur(16px);
+
+      border:
+        1px solid
+        rgba(255,255,255,.9);
+
+      border-radius: 18px;
+
+      padding: 13px 17px;
+
+      box-shadow:
+        0 15px 35px
+        rgba(48, 73, 112, 0.12);
+
+      animation:
+        floating 5s ease-in-out infinite;
+    }
+
+    .floating-info strong {
+      display: block;
+
+      font-size: 13px;
+    }
+
+    .floating-info span {
+      display: block;
+
+      color: var(--muted);
+
+      font-size: 10px;
+
+      margin-top: 2px;
+    }
+
+    .info-one {
+      left: 0;
+      top: 105px;
+    }
+
+    .info-two {
+      right: -10px;
+      bottom: 100px;
+
+      animation-delay: 1.5s;
+    }
+
+    @keyframes floating {
+      0%,
+      100% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+
+
+    /* =========================================================
+       HERO MINI CARDS
+    ========================================================= */
+
+    .hero-mini-cards {
+      position: absolute;
+
+      left: 50%;
+
+      bottom: -3px;
+
+      transform: translateX(-50%);
+
+      width: min(570px, 90%);
+
+      display: grid;
+
+      grid-template-columns:
+        repeat(3, 1fr);
+
+      gap: 1px;
+
+      background: rgba(214, 224, 241, 0.8);
+
+      padding: 1px;
+
+      border-radius: 20px;
+
+      overflow: hidden;
+
+      box-shadow:
+        0 15px 40px
+        rgba(46, 72, 111, 0.10);
+
+      z-index: 8;
+    }
+
+    .mini-card {
+      background:
+        rgba(255,255,255,.93);
+
+      padding:
+        16px
+        12px;
+
+      text-align: center;
+    }
+
+    .mini-icon {
+      font-size: 20px;
+
+      display: block;
+
+      margin-bottom: 5px;
+    }
+
+    .mini-card strong {
+      display: block;
+
+      font-size: 11px;
+    }
+
+    .mini-card span {
+      display: block;
+
+      color: var(--muted);
+
+      font-size: 9px;
+    }
+
+
+    /* =========================================================
+       SECTION
+    ========================================================= */
+
+    section {
+      padding:
+        105px
+        6%;
+    }
+
+    .section-container {
+      width: min(1160px, 100%);
+
+      margin: auto;
+    }
+
+    .section-label {
+      display: flex;
+
+      align-items: center;
+
+      gap: 8px;
+
+      color: var(--purple);
+
+      font-size: 11px;
+
+      font-weight: 900;
+
+      text-transform: uppercase;
+
+      letter-spacing: 1.5px;
+
+      margin-bottom: 12px;
+    }
+
+    .section-label::before {
+      content: "";
+
+      width: 7px;
+      height: 7px;
+
+      border-radius: 50%;
+
+      background: var(--blue);
+    }
+
+    .section-title {
+      font-family:
+        "Playfair Display",
+        serif;
+
+      font-size:
+        clamp(38px, 5vw, 61px);
+
+      line-height: 1.04;
+
+      letter-spacing: -1.5px;
+
+      color: var(--navy);
+
+      margin-bottom: 17px;
+    }
+
+    .section-title span {
+      color: var(--pink);
+    }
+
+    .section-description {
+      max-width: 720px;
+
+      color: var(--muted);
+
+      font-size: 15px;
+    }
+
+
+    /* =========================================================
+       ABOUT
+    ========================================================= */
+
+    .about-section {
+      padding-top: 70px;
+    }
+
+    .about-layout {
+      margin-top: 48px;
+
+      display: grid;
+
+      grid-template-columns:
+        0.75fr
+        1.25fr;
+
+      gap: 25px;
+    }
+
+    .about-intro {
+      position: relative;
+
+      background:
+        linear-gradient(
+          145deg,
+          #edf5ff,
+          #f5effd
+        );
+
+      border-radius: var(--radius);
+
+      padding: 38px;
+
+      min-height: 390px;
+
+      overflow: hidden;
+    }
+
+    .about-intro::after {
+      content: "♡";
+
+      position: absolute;
+
+      right: -15px;
+      bottom: -55px;
+
+      font-size: 190px;
+
+      color:
+        rgba(255,255,255,.55);
+    }
+
+    .about-intro h3 {
+      position: relative;
+      z-index: 2;
+
+      font-family:
+        "Playfair Display",
+        serif;
+
+      font-size: 34px;
+
+      line-height: 1.16;
+
+      margin-bottom: 20px;
+    }
+
+    .about-intro p {
+      position: relative;
+      z-index: 2;
+
+      color: #697991;
+
+      font-size: 14px;
+    }
+
+    .about-story {
+      background: white;
+
+      border:
+        1px solid
+        var(--border);
+
+      border-radius: var(--radius);
+
+      padding: 36px;
+
+      box-shadow: var(--shadow);
+    }
+
+    .story-row {
+      display: grid;
+
+      grid-template-columns: 44px 1fr;
+
+      gap: 17px;
+
+      padding:
+        4px
+        0
+        25px;
+
+      margin-bottom: 23px;
+
+      border-bottom:
+        1px solid
+        #edf0f5;
+    }
+
+    .story-row:last-child {
+      border-bottom: 0;
+
+      margin-bottom: 0;
+
+      padding-bottom: 0;
+    }
+
+    .story-icon {
+      width: 42px;
+      height: 42px;
+
+      border-radius: 13px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      background: var(--blue-light);
+
+      font-size: 18px;
+    }
+
+    .story-row:nth-child(2) .story-icon {
+      background: var(--purple-light);
+    }
+
+    .story-row:nth-child(3) .story-icon {
+      background: var(--pink-light);
+    }
+
+    .story-row p {
+      color: var(--muted);
+
+      font-size: 13px;
+    }
+
+    .story-quote {
+      margin-top: 22px;
+
+      padding:
+        17px
+        20px;
+
+      background: #faf8ff;
+
+      border-radius: 15px;
+
+      color: #65718a !important;
+
+      font-style: italic;
+
+      font-size: 12px !important;
+    }
+
+
+    /* =========================================================
+       EXPERIENCES
+    ========================================================= */
+
+    .experience-section {
+      background:
+        linear-gradient(
+          180deg,
+          rgba(239,247,255,.65),
+          rgba(247,242,255,.52)
+        );
+    }
+
+    .experience-header {
+      display: flex;
+
+      justify-content: space-between;
+
+      align-items: end;
+
+      gap: 30px;
+    }
+
+    .experience-timeline {
+      position: relative;
+
+      margin-top: 55px;
+
+      display: grid;
+
+      grid-template-columns:
+        repeat(6, 1fr);
+
+      gap: 15px;
+    }
+
+    .experience-timeline::before {
+      content: "";
+
+      position: absolute;
+
+      left: 5%;
+
+      right: 5%;
+
+      top: 27px;
+
+      height: 2px;
+
+      background:
+        linear-gradient(
+          90deg,
+          #b7cdef,
+          #cdb8e8,
+          #e4bad7
+        );
+    }
+
+    .experience-item {
+      position: relative;
+
+      z-index: 2;
+
+      text-align: center;
+    }
+
+    .experience-icon {
+      width: 56px;
+      height: 56px;
+
+      margin: 0 auto 18px;
+
+      border-radius: 50%;
+
+      display: flex;
+
+      align-items: center;
+      justify-content: center;
+
+      background: white;
+
+      border:
+        1px solid
+        #e2e6ef;
+
+      box-shadow:
+        0 8px 20px
+        rgba(55, 79, 119, 0.08);
+
+      font-size: 19px;
+    }
+
+    .experience-item h3 {
+      font-size: 13px;
+
+      margin-bottom: 7px;
+    }
+
+    .experience-item p {
+      color: var(--muted);
+
+      font-size: 10px;
+
+      line-height: 1.6;
+    }
+
+
+    /* =========================================================
+       CLUBS
+    ========================================================= */
+
+    .two-column-section {
+      display: grid;
+
+      grid-template-columns:
+        1fr
+        1fr;
+
+      gap: 20px;
+
+      margin-top: 22px;
+    }
+
+    .content-card {
+      background: white;
+
+      border:
+        1px solid
+        var(--border);
+
+      border-radius: var(--radius);
+
+      padding: 31px;
+
+      box-shadow: var(--shadow-small);
+    }
+
+    .card-heading {
+      font-family:
+        "Playfair Display",
+        serif;
+
+      font-size: 27px;
+
+      line-height: 1.15;
+
+      margin-bottom: 22px;
+    }
+
+    .card-heading span {
+      color: var(--blue);
+    }
+
+    .club-grid {
+      display: grid;
+
+      grid-template-columns:
+        repeat(3, 1fr);
+
+      gap: 8px;
+    }
+
+    .club {
+      background: #f8faff;
+
+      border:
+        1px solid
+        #edf0f7;
+
+      border-radius: 13px;
+
+      padding: 13px 10px;
+
+      min-height: 69px;
+    }
+
+    .club-icon {
+      font-size: 15px;
+
+      margin-bottom: 5px;
+    }
+
+    .club strong {
+      display: block;
+
+      font-size: 10px;
+
+      line-height: 1.3;
+    }
+
+    .club small {
+      display: block;
+
+      color: var(--muted);
+
+      font-size: 8px;
+
+      margin-top: 2px;
+    }
+
+    .achievement-strip {
+      margin-top: 14px;
+
+      padding:
+        14px
+        16px;
+
+      border-radius: 14px;
+
+      background:
+        linear-gradient(
+          135deg,
+          #eaf2ff,
+          #f1ebff
+        );
+
+      display: flex;
+
+      align-items: center;
+
+      gap: 13px;
+    }
+
+    .achievement-icon {
+      font-size: 23px;
+    }
+
+    .achievement-strip p {
+      font-size: 10px;
+
+      color: #586780;
+    }
+
+
+    /* =========================================================
+       EXPLORING
+    ========================================================= */
+
+    .explore-card {
+      background:
+        linear-gradient(
+          145deg,
+          #f1f8ff,
+          #f5f0fd
+        );
+
+      border-radius: var(--radius);
+
+      padding: 31px;
+    }
+
+    .explore-list {
+      display: grid;
+
+      gap: 8px;
+    }
+
+    .explore-item {
+      display: grid;
+
+      grid-template-columns: 34px 1fr;
+
+      align-items: center;
+
+      gap: 10px;
+
+      background:
+        rgba(255,255,255,.78);
+
+      border:
+        1px solid
+        rgba(218,224,238,.7);
+
+      border-radius: 12px;
+
+      padding:
+        10px
+        12px;
+    }
+
+    .explore-item-icon {
+      width: 29px;
+      height: 29px;
+
+      display: flex;
+
+      align-items: center;
+      justify-content: center;
+
+      border-radius: 9px;
+
+      background: white;
+
+      color: var(--purple);
+
+      font-size: 13px;
+    }
+
+    .explore-item p {
+      color: #5f6d83;
+
+      font-size: 10px;
+
+      line-height: 1.45;
+    }
+
+
+    /* =========================================================
+       SPORTS / PERSONAL
+    ========================================================= */
+
+    .sports-section {
+      padding-top: 30px;
+    }
+
+    .sports-box {
+      display: grid;
+
+      grid-template-columns:
+        1fr
+        1fr;
+
+      gap: 20px;
+    }
+
+    .sport-card {
+      position: relative;
+
+      overflow: hidden;
+
+      min-height: 240px;
+
+      border-radius: 28px;
+
+      padding: 34px;
+
+      background:
+        linear-gradient(
+          135deg,
+          #e9f5ff,
+          #f2eafd
+        );
+
+      border:
+        1px solid
+        rgba(210,220,238,.8);
+    }
+
+    .sport-card:nth-child(2) {
+      background:
+        linear-gradient(
+          135deg,
+          #f8ebf7,
+          #e9f3ff
+        );
+    }
+
+    .sport-number {
+      color: var(--purple);
+
+      font-size: 10px;
+
+      font-weight: 900;
+
+      letter-spacing: 1.5px;
+
+      text-transform: uppercase;
+    }
+
+    .sport-card h3 {
+      font-family:
+        "Playfair Display",
+        serif;
+
+      font-size: 35px;
+
+      margin:
+        10px
+        0
+        10px;
+    }
+
+    .sport-card p {
+      color: var(--muted);
+
+      max-width: 430px;
+
+      font-size: 13px;
+    }
+
+    .sport-symbol {
+      position: absolute;
+
+      right: 25px;
+      bottom: -18px;
+
+      font-size: 110px;
+
+      opacity: .18;
+    }
+
+
+    /* =========================================================
+       ACHIEVEMENT FEATURE
+    ========================================================= */
+
+    .award {
+      margin-top: 55px;
+
+      position: relative;
+
+      overflow: hidden;
+
+      background:
+        linear-gradient(
+          135deg,
+          #192442,
+          #2d3961
+        );
+
+      color: white;
+
+      border-radius: 32px;
+
+      padding: 53px;
+    }
+
+    .award::before {
+      content: "";
+
+      position: absolute;
+
+      width: 350px;
+      height: 350px;
+
+      right: -120px;
+      top: -160px;
+
+      border-radius: 50%;
+
+      background:
+        rgba(177, 129, 224, .19);
+    }
+
+    .award::after {
+      content: "★";
+
+      position: absolute;
+
+      right: 50px;
+      bottom: -45px;
+
+      font-size: 180px;
+
+      color:
+        rgba(255,255,255,.035);
+    }
+
+    .award-content {
+      position: relative;
+
+      z-index: 2;
+
+      max-width: 730px;
+    }
+
+    .award .section-label {
+      color: #bda3e8;
+    }
+
+    .award .section-label::before {
+      background: #bda3e8;
+    }
+
+    .award h2 {
+      font-family:
+        "Playfair Display",
+        serif;
+
+      font-size:
+        clamp(34px, 5vw, 58px);
+
+      line-height: 1.08;
+
+      margin-bottom: 16px;
+    }
+
+    .award p {
+      color: #c5cede;
+
+      font-size: 14px;
+    }
+
+
+    /* =========================================================
+       CONTACT
+    ========================================================= */
+
+    .contact-section {
+      text-align: center;
+
+      padding-bottom: 70px;
+    }
+
+    .contact-box {
+      margin-top: 50px;
+
+      position: relative;
+
+      overflow: hidden;
+
+      background:
+        linear-gradient(
+          135deg,
+          #eeeaff,
+          #e6f5ff
+        );
+
+      border-radius: 35px;
+
+      padding:
+        62px
+        30px;
+
+      border:
+        1px solid
+        rgba(216,220,241,.8);
+    }
+
+    .contact-box::before {
+      content: "";
+
+      position: absolute;
+
+      width: 250px;
+      height: 250px;
+
+      border-radius: 50%;
+
+      background:
+        rgba(255,255,255,.45);
+
+      left: -100px;
+      bottom: -130px;
+    }
+
+    .contact-box::after {
+      content: "♡";
+
+      position: absolute;
+
+      right: 25px;
+      bottom: -65px;
+
+      font-size: 190px;
+
+      color:
+        rgba(255,255,255,.5);
+    }
+
+    .contact-content {
+      position: relative;
+
+      z-index: 2;
+    }
+
+    .contact-box h2 {
+      font-family:
+        "Playfair Display",
+        serif;
+
+      font-size:
+        clamp(40px, 6vw, 65px);
+
+      line-height: 1;
+
+      margin-bottom: 17px;
+    }
+
+    .contact-box p {
+      max-width: 620px;
+
+      margin: auto;
+
+      color: var(--muted);
+
+      font-size: 14px;
+    }
+
+    .email-button {
+      display: inline-flex;
+
+      margin-top: 27px;
+
+      align-items: center;
+
+      gap: 10px;
+
+      background: var(--navy);
+
+      color: white;
+
+      padding:
+        14px
+        22px;
+
+      border-radius: 100px;
+
+      font-size: 13px;
+
+      font-weight: 800;
+
+      box-shadow:
+        0 13px 30px
+        rgba(24, 38, 65, .17);
+
+      transition: .3s;
+    }
+
+    .email-button:hover {
+      transform: translateY(-3px);
+    }
+
+
+    /* =========================================================
+       FOOTER
+    ========================================================= */
+
+    footer {
+      border-top:
+        1px solid
+        var(--border);
+
+      padding:
+        25px
+        6%;
+
+      background:
+        rgba(255,255,255,.65);
+    }
+
+    .footer-inner {
+      width: min(1160px, 100%);
+
+      margin: auto;
+
+      display: flex;
+
+      justify-content: space-between;
+
+      align-items: center;
+
+      gap: 20px;
+
+      color: #7c8799;
+
+      font-size: 11px;
+    }
+
+    .footer-brand {
+      color: var(--navy);
+
+      font-family:
+        "Playfair Display",
+        serif;
+
+      font-weight: 700;
+
+      font-size: 16px;
+    }
+
+
+    /* =========================================================
+       SCROLL REVEAL
+    ========================================================= */
+
+    .reveal {
+      opacity: 0;
+
+      transform:
+        translateY(28px);
+
+      transition:
+        opacity .75s ease,
+        transform .75s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+
+      transform:
+        translateY(0);
+    }
+
+
+    /* =========================================================
+       RESPONSIVE
+    ========================================================= */
+
+    @media (max-width: 950px) {
+
+      .nav-links {
+        display: none;
+
+        position: absolute;
+
+        top: 63px;
+        left: 0;
+        right: 0;
+
+        background:
+          rgba(255,255,255,.97);
+
+        backdrop-filter: blur(20px);
+
+        padding: 12px;
+
+        border-radius: 22px;
+
+        box-shadow: var(--shadow);
+      }
+
+      .nav-links.open {
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: stretch;
+      }
+
+      .nav-links a {
+        text-align: center;
+
+        width: 100%;
+      }
+
+      .menu-button {
+        display: block;
+      }
+
+      .hero-container {
+        grid-template-columns: 1fr;
+
+        text-align: center;
+      }
+
+      .hero-text {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .hero-buttons {
+        justify-content: center;
+      }
+
+      .scroll-note {
+        justify-content: center;
+      }
+
+      .hero-photo-area {
+        min-height: 560px;
+      }
+
+      .about-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .experience-timeline {
+        grid-template-columns:
+          repeat(3, 1fr);
+
+        row-gap: 35px;
+      }
+
+      .experience-timeline::before {
+        display: none;
+      }
+    }
+
+
+    @media (max-width: 700px) {
+
+      .navbar {
+        top: 10px;
+
+        width:
+          calc(100% - 20px);
+      }
+
+      .brand-name {
+        display: none;
+      }
+
+      .hero {
+        padding:
+          125px
+          6%
+          75px;
+      }
+
+      .hero-title {
+        font-size: 59px;
+
+        letter-spacing: -2px;
+      }
+
+      .hero-photo-area {
+        min-height: 490px;
+      }
+
+      .photo-frame {
+        width: 290px;
+        height: 385px;
+
+        border-radius:
+          150px
+          150px
+          30px
+          30px;
+      }
+
+      .shanvi-photo {
+        border-radius:
+          145px
+          145px
+          25px
+          25px;
+      }
+
+      .photo-backdrop {
+        width: 340px;
+        height: 340px;
+      }
+
+      .info-one {
+        left: 0;
+        top: 70px;
+      }
+
+      .info-two {
+        right: 0;
+        bottom: 90px;
+      }
+
+      .hero-mini-cards {
+        width: 96%;
+      }
+
+      .mini-card {
+        padding:
+          12px
+          7px;
+      }
+
+      .mini-card strong {
+        font-size: 9px;
+      }
+
+      .mini-card span {
+        font-size: 7px;
+      }
+
+      section {
+        padding:
+          80px
+          6%;
+      }
+
+      .about-intro,
+      .about-story {
+        padding: 27px;
+      }
+
+      .experience-timeline {
+        grid-template-columns:
+          repeat(2, 1fr);
+      }
+
+      .two-column-section,
+      .sports-box {
+        grid-template-columns: 1fr;
+      }
+
+      .club-grid {
+        grid-template-columns:
+          repeat(2, 1fr);
+      }
+
+      .award {
+        padding: 38px 27px;
+      }
+
+      .contact-box {
+        padding:
+          50px
+          20px;
+      }
+
+      .footer-inner {
+        flex-direction: column;
+
+        text-align: center;
+      }
+    }
+
+
+    @media (max-width: 430px) {
+
+      .hero-title {
+        font-size: 53px;
+      }
+
+      .photo-frame {
+        width: 270px;
+        height: 360px;
+      }
+
+      .photo-backdrop {
+        width: 310px;
+        height: 310px;
+      }
+
+      .floating-info {
+        padding:
+          10px
+          12px;
+      }
+
+      .floating-info strong {
+        font-size: 11px;
+      }
+
+      .floating-info span {
+        font-size: 8px;
+      }
+
+      .experience-timeline {
+        grid-template-columns: 1fr;
+      }
+
+      .club-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .story-row {
+        grid-template-columns: 38px 1fr;
+      }
+
+      .story-icon {
+        width: 37px;
+        height: 37px;
+      }
+    }
+
+  </style>
+</head>
+
+
+<body>
+
+  <!-- BACKGROUND -->
+
+  <div class="background-shape shape-1"></div>
+  <div class="background-shape shape-2"></div>
+  <div class="background-shape shape-3"></div>
+
+
+  <!-- ========================================================
+       NAVIGATION
+  ========================================================= -->
+
+  <nav class="navbar">
+
+    <div class="nav-inner">
+
+      <a href="#home" class="brand">
+
+        <div class="brand-logo">
+          SM
+        </div>
+
+        <span class="brand-name">
+          SHANVI MAHIDA
+        </span>
+
+      </a>
+
+
+      <div class="nav-links" id="navLinks">
+
+        <a href="#home" class="active">
+          Home
+        </a>
+
+        <a href="#about">
+          About
+        </a>
+
+        <a href="#experiences">
+          Experiences
+        </a>
+
+        <a href="#activities">
+          Activities
+        </a>
+
+        <a href="#exploring">
+          Exploring
+        </a>
+
+        <a href="#contact" class="nav-button">
+          ✉ Let's Connect
+        </a>
+
+      </div>
+
+
+      <button
+        class="menu-button"
+        id="menuButton"
+        aria-label="Open navigation"
+      >
+        ☰
+      </button>
+
+    </div>
+
+  </nav>
+
+
+
+  <!-- ========================================================
+       HERO
+  ========================================================= -->
+
+  <main>
+
+    <section class="hero" id="home">
+
+      <div class="hero-container">
+
+
+        <!-- LEFT -->
+
+        <div class="hero-content reveal">
+
+          <div class="hero-eyebrow">
+
+            <span>
+              Future Healthcare Professional
+            </span>
+
+            <span class="heart-line"></span>
+
+          </div>
+
+
+          <h1 class="hero-title">
+
+            Hi, I'm<br>
+
+            <span>Shanvi.</span>
+
+          </h1>
+
+
+          <p class="hero-text">
+
+            A curious learner, passionate about healthcare,
+            and driven by a desire to help others feel seen,
+            supported, and cared for.
+
+          </p>
+
+
+          <div class="hero-buttons">
+
+            <a
+              href="#about"
+              class="button button-primary"
+            >
+              Learn More About Me
+              <span>→</span>
+            </a>
+
+
+            <a
+              href="#experiences"
+              class="button button-secondary"
+            >
+              My Experiences
+            </a>
+
+          </div>
+
+
+          <div class="scroll-note">
+
+            <span class="scroll-mouse"></span>
+
+            <span>
+              Scroll to explore
+            </span>
+
+          </div>
+
+        </div>
+
+
+        <!-- RIGHT -->
+
+        <div class="hero-photo-area reveal">
+
+          <div class="photo-backdrop"></div>
+
+
+          <div class="floating-info info-one">
+
+            <strong>
+              🩺 Healthcare
+            </strong>
+
+            <span>
+              My future passion
+            </span>
+
+          </div>
+
+
+          <div class="photo-frame">
+
+            <img
+              src="shanvi-photo.png"
+              alt="Shanvi Mahida"
+              class="shanvi-photo"
+            >
+
+          </div>
+
+
+          <div class="photo-badge">
+            ♡
+          </div>
+
+
+          <div class="floating-info info-two">
+
+            <strong>
+              💗 Compassion
+            </strong>
+
+            <span>
+              My purpose
+            </span>
+
+          </div>
+
+
+          <div class="hero-mini-cards">
+
+            <div class="mini-card">
+
+              <span class="mini-icon">
+                🩺
+              </span>
+
+              <strong>
+                Healthcare
+              </strong>
+
+              <span>
+                My future passion
+              </span>
+
+            </div>
+
+
+            <div class="mini-card">
+
+              <span class="mini-icon">
+                🧠
+              </span>
+
+              <strong>
+                Curiosity
+              </strong>
+
+              <span>
+                My driving force
+              </span>
+
+            </div>
+
+
+            <div class="mini-card">
+
+              <span class="mini-icon">
+                ♡
+              </span>
+
+              <strong>
+                Compassion
+              </strong>
+
+              <span>
+                My purpose
+              </span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ========================================================
+         ABOUT
+    ========================================================= -->
+
+    <section
+      class="about-section"
+      id="about"
+    >
+
+      <div class="section-container">
+
+
+        <div class="section-label reveal">
+          About Me
+        </div>
+
+
+        <h2 class="section-title reveal">
+
+          A story still<br>
+
+          <span>being written.</span>
+
+        </h2>
+
+
+        <p class="section-description reveal">
+
+          I'm currently a freshman planning to pursue a career
+          in healthcare. My life wasn't always — and still isn't
+          fully — planned out, but I've been drawn to helping
+          others for as long as I can remember.
+
+        </p>
+
+
+        <div class="about-layout">
+
+
+          <!-- STORY CARD -->
+
+          <div class="about-intro reveal">
+
+            <h3>
+
+              Even as a kid,
+              I wanted to
+              help heal.
+
+            </h3>
+
+
+            <p>
+
+              I was so intrigued by Rapunzel's magical healing
+              hair that I may have attempted to use my own hair
+              to cure a few papercuts over the years.
+
+            </p>
+
+          </div>
+
+
+          <!-- STORY -->
+
+          <div class="about-story reveal">
+
+
+            <div class="story-row">
+
+              <div class="story-icon">
+                👥
+              </div>
+
+              <p>
+
+                Whether it's lending a hand at the library or
+                taking responsibility for my own younger brother,
+                I find meaning in caring for people and helping
+                them feel seen and supported.
+
+              </p>
+
+            </div>
+
+
+            <div class="story-row">
+
+              <div class="story-icon">
+                📖
+              </div>
+
+              <p>
+
+                I'm still exploring healthcare, wondering if I
+                want to go into pediatrics, psychology, or
+                something else — but I'm excited to be learning
+                at every pothole and fork in the road.
+
+              </p>
+
+            </div>
+
+
+            <div class="story-row">
+
+              <div class="story-icon">
+                ✨
+              </div>
+
+              <p>
+
+                I'm excited to continue growing, discovering
+                new interests, building relationships, and
+                finding meaningful ways to make a difference.
+
+              </p>
+
+            </div>
+
+
+            <p class="story-quote">
+
+              “I'm not trying to have every answer figured out.
+              I'm excited to discover where the road takes me.”
+
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ========================================================
+         EXPERIENCES
+    ========================================================= -->
+
+    <section
+      class="experience-section"
+      id="experiences"
+    >
+
+      <div class="section-container">
+
+
+        <div class="experience-header">
+
+          <div>
+
+            <div class="section-label reveal">
+              Experiences
+            </div>
+
+            <h2 class="section-title reveal">
+
+              Moments that
+              <span>shaped me.</span>
+
+            </h2>
+
+          </div>
+
+        </div>
+
+
+        <div class="experience-timeline">
+
+
+          <div class="experience-item reveal">
+
+            <div class="experience-icon">
+              📚
+            </div>
+
+            <h3>
+              Library Volunteer
+            </h3>
+
+            <p>
+              Helped out in events such as Diwali,
+              Storytimes, Kids Summer Reading and more.
+            </p>
+
+          </div>
+
+
+          <div class="experience-item reveal">
+
+            <div class="experience-icon">
+              🩹
+            </div>
+
+            <h3>
+              CPR & First Aid
+            </h3>
+
+            <p>
+              Certified by the American Red Cross.
+            </p>
+
+          </div>
+
+
+          <div class="experience-item reveal">
+
+            <div class="experience-icon">
+              🎙️
+            </div>
+
+            <h3>
+              Solar Panel Interview
+            </h3>
+
+            <p>
+              Interviewed in fourth grade about
+              solar panels added to township schools.
+            </p>
+
+          </div>
+
+
+          <div class="experience-item reveal">
+
+            <div class="experience-icon">
+              👥
+            </div>
+
+            <h3>
+              Executive Board
+            </h3>
+
+            <p>
+              Ran as a public relations representative
+              and treasurer.
+            </p>
+
+          </div>
+
+
+          <div class="experience-item reveal">
+
+            <div class="experience-icon">
+              🧶
+            </div>
+
+            <h3>
+              Tangled Treasures
+            </h3>
+
+            <p>
+              Started a rope bowl business through
+              the TREP$ Program.
+            </p>
+
+          </div>
+
+
+          <div class="experience-item reveal">
+
+            <div class="experience-icon">
+              🏆
+            </div>
+
+            <h3>
+              Sports & More
+            </h3>
+
+            <p>
+              Participated in gymnastics, robotics,
+              dance, swimming and volleyball.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ========================================================
+         ACTIVITIES
+    ========================================================= -->
+
+    <section id="activities">
+
+      <div class="section-container">
+
+
+        <div class="section-label reveal">
+          Clubs & Activities
+        </div>
+
+
+        <div class="two-column-section">
+
+
+          <!-- CLUBS -->
+
+          <div class="content-card reveal">
+
+            <h2 class="card-heading">
+
+              Always learning.
+              <span>Always growing.</span>
+
+            </h2>
+
+
+            <div class="club-grid">
+
+
+              <div class="club">
+
+                <div class="club-icon">
+                  ⚙️
+                </div>
+
+                <strong>
+                  STEAM
+                </strong>
+
+              </div>
+
+
+              <div class="club">
+
+                <div class="club-icon">
+                  ➗
+                </div>
+
+                <strong>
+                  MathCounts
+                </strong>
+
+                <small>
+                  Regionals
+                </small>
+
+              </div>
+
+
+              <div class="club">
+
+                <div class="club-icon">
+                  🧮
+                </div>
+
+                <strong>
+                  Math Olympiad
+                </strong>
+
+              </div>
+
+
+              <div class="club">
+
+                <div class="club-icon">
+                  🔬
+                </div>
+
+                <strong>
+                  Science Olympiad
+                </strong>
+
+                <small>
+                  Multiple events
+                </small>
+
+              </div>
+
+
+              <div class="club">
+
+                <div class="club-icon">
+                  🏫
+                </div>
+
+                <strong>
+                  Student Council
+                </strong>
+
+              </div>
+
+
+              <div class="club">
+
+                <div class="club-icon">
+                  🤝
+                </div>
+
+                <strong>
+                  Anti-Defamation League
+                </strong>
+
+              </div>
+
+
+              <div class="club">
+
+                <div class="club-icon">
+                  🇪🇸
+                </div>
+
+                <strong>
+                  Spanish Club
+                </strong>
+
+              </div>
+
+
+              <div class="club">
+
+                <div class="club-icon">
+                  🎨
+                </div>
+
+                <strong>
+                  Art & Literacy Magazine
+                </strong>
+
+              </div>
+
+
+              <div class="club">
+
+                <div class="club-icon">
+                  🧠
+                </div>
+
+                <strong>
+                  Science & Research
+                </strong>
+
+              </div>
+
+
+            </div>
+
+
+            <div class="achievement-strip">
+
+              <div class="achievement-icon">
+                🏆
+              </div>
+
+              <p>
+
+                Recently presented the
+                <strong>
+                  Presidential Award for Academic Excellence
+                </strong>
+                for academic achievement.
+
+              </p>
+
+            </div>
+
+          </div>
+
+
+
+          <!-- EXPLORING -->
+
+          <div
+            class="explore-card reveal"
+            id="exploring"
+          >
+
+            <h2 class="card-heading">
+
+              Curious about
+              <span>many paths.</span>
+
+            </h2>
+
+
+            <div class="explore-list">
+
+
+              <div class="explore-item">
+
+                <div class="explore-item-icon">
+                  🧬
+                </div>
+
+                <p>
+                  I'm truly fascinated by the world of both
+                  biology and psychology.
+                </p>
+
+              </div>
+
+
+              <div class="explore-item">
+
+                <div class="explore-item-icon">
+                  📱
+                </div>
+
+                <p>
+                  I've recently begun working on a phone
+                  application too.
+                </p>
+
+              </div>
+
+
+              <div class="explore-item">
+
+                <div class="explore-item-icon">
+                  📚
+                </div>
+
+                <p>
+                  Through reading medical stories and books,
+                  my love for healthcare has grown.
+                </p>
+
+              </div>
+
+
+              <div class="explore-item">
+
+                <div class="explore-item-icon">
+                  🎤
+                </div>
+
+                <p>
+                  I'm working on public speaking and building
+                  connections with a large range of people.
+                </p>
+
+              </div>
+
+
+              <div class="explore-item">
+
+                <div class="explore-item-icon">
+                  🧠
+                </div>
+
+                <p>
+                  I'm open to medical topics such as genetics,
+                  psychology, neurology, and pediatrics.
+                </p>
+
+              </div>
+
+
+              <div class="explore-item">
+
+                <div class="explore-item-icon">
+                  ⭐
+                </div>
+
+                <p>
+                  I'm excited to dive into more clubs and
+                  activities that align with my goals.
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ========================================================
+         SPORTS
+    ========================================================= -->
+
+    <section class="sports-section">
+
+      <div class="section-container">
+
+        <div class="section-label reveal">
+          Beyond Academics
+        </div>
+
+
+        <h2 class="section-title reveal">
+
+          The things that
+          <span>keep me moving.</span>
+
+        </h2>
+
+
+        <div class="sports-box">
+
+
+          <div class="sport-card reveal">
+
+            <div class="sport-number">
+              Since I was three
+            </div>
+
+            <h3>
+              Swimming
+            </h3>
+
+            <p>
+
+              Swimming has taught me diligence, stamina,
+              discipline, goal-setting, and how to keep
+              pushing even when things get difficult.
+
+            </p>
+
+            <div class="sport-symbol">
+              🏊
+            </div>
+
+          </div>
+
+
+          <div class="sport-card reveal">
+
+            <div class="sport-number">
+              My newfound passion
+            </div>
+
+            <h3>
+              Volleyball
+            </h3>
+
+            <p>
+
+              Volleyball gives me a way to reset, challenge
+              myself, overcome mental blocks, and continue
+              growing through every challenge.
+
+            </p>
+
+            <div class="sport-symbol">
+              🏐
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ========================================================
+         AWARD
+    ========================================================= -->
+
+    <section>
+
+      <div class="section-container">
+
+        <div class="award reveal">
+
+          <div class="award-content">
+
+            <div class="section-label">
+              A moment I'm proud of
+            </div>
+
+            <h2>
+              Presidential Award
+              for Academic Excellence
+            </h2>
+
+            <p>
+
+              I was recently presented the Presidential Award
+              for Academic Excellence. It represents a meaningful
+              academic milestone and reminds me of what can happen
+              when consistency, effort, and curiosity come together.
+
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ========================================================
+         CONTACT
+    ========================================================= -->
+
+    <section
+      class="contact-section"
+      id="contact"
+    >
+
+      <div class="section-container">
+
+        <div class="section-label reveal"
+             style="justify-content:center;">
+          Contact Me
+        </div>
+
+
+        <div class="contact-box reveal">
+
+          <div class="contact-content">
+
+            <h2>
+              Let's connect.
+            </h2>
+
+
+            <p>
+
+              I love talking to people who are involved in
+              healthcare and students who are on similar paths.
+              Feel free to reach out, connect, and start a conversation.
+
+            </p>
+
+
+            <a
+              href="mailto:shanvi.mahida@gmail.com"
+              class="email-button"
+            >
+
+              ✉
+
+              shanvi.mahida@gmail.com
+
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+
+  <!-- ========================================================
+       FOOTER
+  ========================================================= -->
+
+  <footer>
+
+    <div class="footer-inner">
+
+      <span class="footer-brand">
+        SM
+      </span>
+
+      <span>
+        Empathy-led and people-focused.
+      </span>
+
+      <span>
+        © 2026 Shanvi Mahida
+      </span>
+
+    </div>
+
+  </footer>
+
+
+
+  <!-- ========================================================
+       JAVASCRIPT
+  ========================================================= -->
+
+  <script>
+
+    /* ---------------------------------------------------------
+       MOBILE MENU
+    --------------------------------------------------------- */
+
+    const menuButton =
+      document.getElementById("menuButton");
+
+    const navLinks =
+      document.getElementById("navLinks");
+
+
+    menuButton.addEventListener("click", () => {
+
+      navLinks.classList.toggle("open");
+
+    });
+
+
+    /* Close menu after clicking a link */
+
+    document
+      .querySelectorAll(".nav-links a")
+      .forEach(link => {
+
+        link.addEventListener("click", () => {
+
+          navLinks.classList.remove("open");
+
+        });
+
+      });
+
+
+
+    /* ---------------------------------------------------------
+       SCROLL REVEAL
+    --------------------------------------------------------- */
+
+    const revealObserver =
+      new IntersectionObserver(
+
+        entries => {
+
+          entries.forEach(entry => {
+
+            if (entry.isIntersecting) {
+
+              entry.target.classList.add("visible");
+
+              revealObserver.unobserve(
+                entry.target
+              );
+
+            }
+
+          });
+
+        },
+
+        {
+          threshold: 0.10
+        }
+
+      );
+
+
+    document
+      .querySelectorAll(".reveal")
+      .forEach(element => {
+
+        revealObserver.observe(element);
+
+      });
+
+
+
+    /* ---------------------------------------------------------
+       ACTIVE NAVIGATION
+    --------------------------------------------------------- */
+
+    const sections =
+      document.querySelectorAll(
+        "section[id]"
+      );
+
+    const navItems =
+      document.querySelectorAll(
+        ".nav-links a:not(.nav-button)"
+      );
+
+
+    window.addEventListener("scroll", () => {
+
+      let current = "";
+
+      sections.forEach(section => {
+
+        const sectionTop =
+          section.offsetTop - 180;
+
+        if (
+          window.scrollY >= sectionTop
+        ) {
+          current = section.getAttribute("id");
+        }
+
+      });
+
+
+      navItems.forEach(link => {
+
+        link.classList.remove("active");
+
+        if (
+          link.getAttribute("href") ===
+          "#" + current
+        ) {
+
+          link.classList.add("active");
+
+        }
+
+      });
+
+    });
+
+
+
+    /* ---------------------------------------------------------
+       SUBTLE HERO PARALLAX
+    --------------------------------------------------------- */
+
+    const heroPhoto =
+      document.querySelector(
+        ".hero-photo-area"
+      );
+
+
+    window.addEventListener(
+      "mousemove",
+      event => {
+
+        if (
+          window.innerWidth <= 950 ||
+          !heroPhoto
+        ) {
+          return;
+        }
+
+        const x =
+          (event.clientX /
+            window.innerWidth -
+            0.5) * 7;
+
+        const y =
+          (event.clientY /
+            window.innerHeight -
+            0.5) * 7;
+
+
+        heroPhoto.style.transform =
+          `translate(${x}px, ${y}px)`;
+
+      }
+    );
+
+
+    /* Reset parallax */
+
+    window.addEventListener(
+      "mouseleave",
+      () => {
+
+        if (heroPhoto) {
+
+          heroPhoto.style.transform =
+            "translate(0, 0)";
+
+        }
+
+      }
+    );
+
+  </script>
+
+</body>
+</html>
